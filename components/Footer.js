@@ -56,8 +56,8 @@ const Footer = () => {
                             <p className='footer-links-header'>Contact</p>
                             <Link href='/about'><div className='footer-link'>Email</div></Link>
                             <Link href='/contact'><div className='footer-link'>Twitter</div></Link>
-                            <Link href='/reviews'><div className='footer-link'>Linkedin</div></Link>
-                            <Link href='/affiliate'><p className='footer-link'>Facebook </p></Link>
+                            <Link href='/'><div className='footer-link'>Linkedin</div></Link>
+                            <Link href='/'><p className='footer-link'>Facebook </p></Link>
 
                             {/* <p className='footer-link'><IoIosPhonePortrait className='footer-contact-icon' /> (203) 822-2311</p> */}
                           </div>
