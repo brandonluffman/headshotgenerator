@@ -41,8 +41,8 @@ const Footer = () => {
                             <Link href='/pricing'><div className='footer-link'>About Us</div></Link>
                             <Link href='/blogs'><div className='footer-link'>FAQs</div></Link>
                             {/* <div className='copyright-footer-flexer'> */}
-                              <Link target='_blank' rel='noreferrer' href='https://www.privacypolicygenerator.info/live.php?token=X9rYsibwbs1UKYQ41C7KL0IBJSIEOkts'><div className='footer-link'>Privacy Policy</div></Link>
-                              <Link target='_blank' rel='noreferrer' href="https://www.termsofusegenerator.net/live.php?token=WtIAwIaSx5ilU5RgC3s2N2AtWAptbnTh"><div className='footer-link'>Terms of Use</div></Link>
+                              <Link target='_blank' rel='noreferrer' href='https://www.privacypolicygenerator.info/'><div className='footer-link'>Privacy Policy</div></Link>
+                              <Link target='_blank' rel='noreferrer' href="https://www.termsofusegenerator.net/"><div className='footer-link'>Terms of Use</div></Link>
                               <Link href='/support'><div className='footer-link'>Support</div></Link>
                               <Link href='/blog'><div className='footer-link'>Blog</div></Link>
 
