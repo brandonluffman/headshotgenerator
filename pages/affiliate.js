@@ -2,6 +2,14 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Link from 'next/link'
+import { FaCookie } from "react-icons/fa";
+import { FcPaid } from "react-icons/fc";
+import { MdPaid } from "react-icons/md";
+import { SiBaremetrics } from "react-icons/si";
+import { SiConvertio } from "react-icons/si";
+import { MdHighQuality } from "react-icons/md";
+import { GiGrowth } from "react-icons/gi";
+import { FaHandshakeSimple } from "react-icons/fa6";
 
 const affiliate = () => {
   return (
@@ -9,7 +17,7 @@ const affiliate = () => {
         <Navbar />
         <div className='affiliate-container'>
             <div className='affiliate-content-container'>
-            <span className='affiliate-tag'>Affiliates</span>
+            <span className='affiliate-tag gradient-text'>Affiliates</span>
             <h2 className='affiliate-header'>Partner with HeadshotGenerator<span className='blue-color-change'>AI</span></h2>
             <div className='affiliate-btn-container'>
             <Link href='/partners'><button className='affiliate-btn btn btn-primary'>Join the Program</button></Link>
@@ -27,35 +35,35 @@ const affiliate = () => {
             <hr className='affiliate-hr'></hr>
             <ul className='affiliate-list'>
                 <li className='affiliate-list-item'>
-                    <p className='affiliate-list-header'>30-Day Cookie</p>
+                    <p className='affiliate-list-header'><FaCookie className='affiliate-icon'/> 30-Day Cookie</p>
                     <p className='affiliate-list-content'>Get credit with an industry-standard 30-day attribution window.</p>
                 </li>
                 <li className='affiliate-list-item'>
-                    <p className='affiliate-list-header'>Earn Competitive Commissions</p>
+                    <p className='affiliate-list-header'><MdPaid className='affiliate-icon'/> Earn Competitive Commissions</p>
                     <p className='affiliate-list-content'>Get paid on both trials and subscriptions.</p>
                 </li>
                 <li className='affiliate-list-item'>
-                    <p className='affiliate-list-header'>Get Paid on Your Terms</p>
+                    <p className='affiliate-list-header'><FcPaid className='affiliate-icon'/> Get Paid on Your Terms</p>
                     <p className='affiliate-list-content'>We pay monthly… on time and in your currency.</p>
                 </li>
                 <li className='affiliate-list-item'>
-                    <p className='affiliate-list-header'>Easy Onboarding</p>
+                    <p className='affiliate-list-header'><FaHandshakeSimple className='affiliate-icon'/> Easy Onboarding</p>
                     <p className='affiliate-list-content'>Most affiliates can get started in less than 7 days.</p>
                 </li>
                 <li className='affiliate-list-item'>
-                    <p className='affiliate-list-header'>Detailed Metrics</p>
+                    <p className='affiliate-list-header'><SiBaremetrics className='affiliate-icon'/> Detailed Metrics</p>
                     <p className='affiliate-list-content'>See near-real-time data on our powerful platform.</p>
                 </li>
                 <li className='affiliate-list-item'>
-                    <p className='affiliate-list-header'>High Conversion Rates</p>
+                    <p className='affiliate-list-header'><SiConvertio className='affiliate-icon'/> High Conversion Rates</p>
                     <p className='affiliate-list-content'>We’re optimized for maximum results.</p>
                 </li>
                 <li className='affiliate-list-item'>
-                    <p className='affiliate-list-header'>High-Quality Creative</p>
+                    <p className='affiliate-list-header'><MdHighQuality className='affiliate-icon'/> High-Quality Creative</p>
                     <p className='affiliate-list-content'>Artwork is available in the languages you need.</p>
                 </li>
                 <li className='affiliate-list-item'>
-                    <p className='affiliate-list-header'>We&apos;re Growing!</p>
+                    <p className='affiliate-list-header'><GiGrowth className='affiliate-icon'/> We&apos;re Growing!</p>
                     <p className='affiliate-list-content'>Artwork is available in the languages you need.</p>
                 </li>
             </ul>

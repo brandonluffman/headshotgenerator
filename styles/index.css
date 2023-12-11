@@ -11,6 +11,17 @@
     font-weight:300;
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 :root {
     --blue: rgb(56, 146, 255);
     --gradient: linear-gradient(60deg, #6ed5d5, #4096ff);
@@ -88,7 +99,7 @@
     color:rgb(255, 255, 255);
 }
 .btn-black:hover {
-    background-color: var(--blue);
+    /* background-color: var(--blue); */
     /* border:4px solid rgb(0, 0, 0); */
     color:rgb(255, 255, 255);
 }
@@ -113,7 +124,11 @@
   }
 .email-link {
     color:var(--blue);
+    transition: 0.2s ease all;
+}
 
+.email-link:hover {
+    color:var(--purple);
 }
 
   .blue {
@@ -523,7 +538,7 @@ p {
 .landing-reviews-container {
     background-color: var(--cl-black);
     color:white;
-    padding:2rem;
+    padding:4rem 2rem 8rem 2rem;
     /* height:500px; */
     text-align: center;
 
@@ -634,9 +649,9 @@ p {
     font-size: 2rem !important;
 }
 .landing-privacy-grid-antiflexer > p {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
-    font-size: 1rem !important;
+    font-size: 1.25rem !important;
     margin-bottom:1rem;
 
 
@@ -808,7 +823,7 @@ p {
     width:75%;
     margin: 0rem auto;
     /* padding: 1rem 0rem; */
-
+    transition: 0.2s ease all;
 }
 
 .landing-faqs-subheader {
@@ -818,7 +833,12 @@ p {
     margin-top:0rem;
 }
 .faq-item:hover > .faq-header, .faq-item:hover > .dropdown-icon {
-    color:rgb(36, 107, 238) !important;
+    /* color:rgb(36, 107, 238) !important; */
+    font-weight: bold; /* Optional: makes the gradient more visible */
+    background: linear-gradient(60deg, #6ed5d5, #4096ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .faq-header {
@@ -871,6 +891,8 @@ p {
     font-size:2rem;
     cursor: pointer;
     float:right;
+    transition: 0.2s ease all;
+    color: black;
 }
 
 

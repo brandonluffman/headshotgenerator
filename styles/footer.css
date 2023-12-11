@@ -30,6 +30,9 @@ border-radius:7px;
 padding:0rem 0.2rem;
 }
 
+.fa-youtube {
+    color: #FF0000;
+}
 .fa-linkedin {
     color:#0e76a8;
 }
@@ -46,16 +49,22 @@ padding:0rem 0.2rem;
     padding:1rem 0rem;
 }
 
-
+.footer-brand-img {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
 .form-div {
     position:relative;
 }
 
 .footer-brand-logo {
-    width:50%;
+    width:20%;
     margin-bottom: 0rem;
     /* height:150px; */
     /* margin-bottom:2rem; */
+    margin-right:0.5rem;
 }
 
 .footer-links-container {
@@ -87,7 +96,6 @@ padding:0rem 0.2rem;
 }
 .footer-brand-header {
     font-size: 2rem !important;
-    margin-top:1rem;
 }
 .footer-link {
     font-size:1rem !important;
@@ -119,13 +127,14 @@ Link {
 .copyright-footer {
     width:100%;
     text-align: center;
-    font-size:1rem;
+    font-size:1rem !important;
 }
 
 .footer-copyright-content {
     letter-spacing: -0.05vw;
     margin:0;
     padding:1rem 0rem 1rem 0rem;
+    font-size: 1rem !important;
 
 }
 
