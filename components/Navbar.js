@@ -89,29 +89,23 @@ const Navbar = () => {
 
         <div className='vertical-line'></div>
         <div className='login-menu'>
-        {user?.user !== null ? (
+        {/* {user?.user !== null ? (
               <div className='nav-link nav-link-welcome'>
                 <div className='profile-circle'>
                   <div className='profile-circle-letter'>{profileLetter}</div>
                 <div className='profile-nav'>     
                 <p className='profile-circle-email'>Hello {user?.user.email}</p>
                 <button className='logout-nav-btn logout-logged-in btn nav-btn btn-tertiary'>
-
-                {/* <button className='logout-nav-btn logout-logged-in btn nav-btn btn-tertiary' onClick={handleLogout}> */}
                   Logout
                 </button>
                 </div>
                 </div>
-                {/* <h1>Welcome, Brandon</h1> */}
-        
               </div>
             ) : (
               <div className='nav-link'>
                 <li className='nav-link nav-link-btn-li'>
                   <Link href='/login'>
-                    {/* <button type='button' className={navbar ? 'nav-link-btn nav-login-btn btn btn-primary':'nav-link-btn nav-login-btn-scrolled btn btn-primary'}>
-                      Log In
-                    </button> */}
+  
                     <button type='button' className='nav-link-btn nav-login-btn-scrolled btn btn-primary'>
                       Login
                     </button>
@@ -125,7 +119,7 @@ const Navbar = () => {
                   </Link>
                 </li>
               </div>
-            )}
+            )} */}
             </div>
             </ul>
 

@@ -66,6 +66,10 @@ const Pricing = () => {
     
         return { discountedCost, totalCostWithoutDiscount };
     }
+
+    const showAlert = (e) => {
+        alert('We are currently not accepting any users at this time.')
+    }
     
     const result = calculateTotalCost(teamMembers);
     const discountedCost = result.discountedCost;
@@ -105,7 +109,8 @@ const Pricing = () => {
                         </div>
                         </div>                        <hr className='pricing-grid-hr'></hr>
                         <h2 className='pricing-grid-plan blue-pricing-header'>Starter</h2>
-                        {user?.user ? ( <Link href='/test'><button className='pricing-grid-btn btn-tertiary' type='button'>Get Started</button></Link>):(<Link href='/register'><button className='btn-tertiary pricing-grid-btn' type='button'>Get Started</button></Link>)}
+                        <button onClick={showAlert} className='pricing-grid-btn btn-tertiary' type='button'>Get Started</button>
+                        {/* {user?.user ? ( <Link href='/test'><button className='pricing-grid-btn btn-tertiary' type='button'>Get Started</button></Link>):(<Link href='/register'><button className='btn-tertiary pricing-grid-btn' type='button'>Get Started</button></Link>)} */}
                     </div>
                     <div className='pricing-grid-item'>
                         <h3 className='pricing-grid-header'>$19.99</h3>
@@ -117,7 +122,8 @@ const Pricing = () => {
                         </div>
                         </div>                        <hr className='pricing-grid-hr'></hr>
                         <h2 className='pricing-grid-plan'>Pro</h2>
-                        {user?.user ? ( <Link href='https://buy.stripe.com/test_5kAfZWfRO11B8c89AA'><button className='btn-white pricing-grid-btn' type='button'>Get Started</button></Link>):(<Link href='/register'><button className='btn-white pricing-grid-btn' type='button'>Get Started</button></Link>)}
+                        <button onClick={showAlert} className='btn-white pricing-grid-btn' type='button'>Get Started</button>
+                        {/* {user?.user ? ( <Link href='https://buy.stripe.com/test_5kAfZWfRO11B8c89AA'><button className='btn-white pricing-grid-btn' type='button'>Get Started</button></Link>):(<Link href='/register'><button className='btn-white pricing-grid-btn' type='button'>Get Started</button></Link>)} */}
                     </div>
                     <div className='pricing-grid-item'>
                         <h3 className='pricing-grid-header'>$39.99</h3>
@@ -130,7 +136,9 @@ const Pricing = () => {
                         </div>
                                                 <hr className='pricing-grid-hr'></hr>
                         <h2 className='pricing-grid-plan platinum-header'>Premium</h2>
-                        {user?.user ? ( <Link href='/payment'><button className='btn-tertiary pricing-grid-btn' type='button'>Get Started</button></Link>):(<Link href='/register'><button className='btn-tertiary pricing-grid-btn' type='button'>Get Started</button></Link>)}
+                        <button onClick={showAlert} className='pricing-grid-btn btn-tertiary' type='button'>Get Started</button>
+
+                        {/* {user?.user ? ( <Link href='/payment'><button className='btn-tertiary pricing-grid-btn' type='button'>Get Started</button></Link>):(<Link href='/register'><button className='btn-tertiary pricing-grid-btn' type='button'>Get Started</button></Link>)} */}
                     </div>
             </div>
         ) : (
@@ -160,7 +168,9 @@ const Pricing = () => {
                         <p className='pricing-grid-p'><MdVerified className='team-icon' />45 minute turnaround time</p>
                         </div>
                         </div>
-                        {user?.user ? ( <Link href='https://buy.stripe.com/test_5kAfZWfRO11B8c89AA'><button className='btn-white pricing-grid-btn' type='button'>Get Started</button></Link>):(<Link href='/register'><button className='btn-white pricing-grid-btn' type='button'>Get Started</button></Link>)}
+                        <button onClick={showAlert} className='btn-white pricing-grid-btn' type='button'>Get Started</button>
+
+                        {/* {user?.user ? ( <Link href='https://buy.stripe.com/test_5kAfZWfRO11B8c89AA'><button className='btn-white pricing-grid-btn' type='button'>Get Started</button></Link>):(<Link href='/register'><button className='btn-white pricing-grid-btn' type='button'>Get Started</button></Link>)} */}
                     </div>
       
         </div>
